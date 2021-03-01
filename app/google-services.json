@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "933720272922",
+    "project_id": "oavct2",
+    "storage_bucket": "oavct2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933720272922:android:3b217ba67d213d919ee1a3",
+        "android_client_info": {
+          "package_name": "com.example.animsplashdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933720272922-fb8mambktp5ba6umtuvir8qi06i6oe7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXDyU26satLIWLKAdWTJEvXnvyKQsFOLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933720272922-fb8mambktp5ba6umtuvir8qi06i6oe7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

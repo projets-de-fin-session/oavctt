@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.animsplashdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BureauPiprew"></activity>
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".TransactionHistory" />
+        <activity android:name=".FileHistory" />
+        <activity android:name=".OnlinePayment" />
+        <activity android:name=".BlockingRequest" />
+        <activity android:name=".ChangeUse" />
+        <activity android:name=".ExpertiseRequest" />
+        <activity android:name=".VehiculeInsurance" />
+        <activity android:name=".Home" />
+        <activity android:name=".Profile" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".FeedBack" />
+        <activity android:name=".Services" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
