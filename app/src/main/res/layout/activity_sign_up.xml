@@ -7,24 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".SignUp">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/boll"
-        android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Light"
-        tools:ignore="MissingConstraints" />
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/boll"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--        tools:ignore="MissingConstraints" />-->
 
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_back_24" />
+<!--    <ImageView-->
+<!--        android:id="@+id/back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_baseline_back_24" />-->
 
 
 
