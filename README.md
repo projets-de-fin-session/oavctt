@@ -83,7 +83,7 @@ The instructor of this project:
 5. Push your branch (git push origin my-new-feature)
 6. Create a new Pull Request
 ## Images
-![](IMG_1983.jpg)
+![](IMG_1983.jpg,IMG_1984.jpg)
 ## Video Walkthrough OR Wireframe
 
 Here's a walkthrough of implemented user stories:
