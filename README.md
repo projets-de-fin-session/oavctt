@@ -25,6 +25,7 @@ Aside  from  the  default  basic  architecture  of  Android  studio,  we  have  
 * A package for activities
 * A package for Models
 * A package for adaptors
+![](ad.jpeg)
 
 ## User Stories
 These are people who will use the front end to perform the following services:
@@ -83,7 +84,7 @@ The instructor of this project:
 5. Push your branch (git push origin my-new-feature)
 6. Create a new Pull Request
 ## Images
-![](IMG_1983.jpg,IMG_1984.jpg)
+![](pp.jpeg)
 ## Video Walkthrough OR Wireframe
 
 Here's a walkthrough of implemented user stories:
