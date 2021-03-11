@@ -444,16 +444,16 @@
 
     </ScrollView>
 
-    <Button
-        android:id="@+id/buttonadtowatchlist"
-        android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:background="#0E2055"
-        android:text="@string/see_localisatio"
-        android:textAllCaps="false"
-        android:textColor="@color/blac"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+<!--    <Button-->
+<!--        android:id="@+id/buttonadtowatchlist"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:background="#0E2055"-->
+<!--        android:text="@string/see_localisatio"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/blac"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

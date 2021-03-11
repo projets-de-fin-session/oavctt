@@ -3,31 +3,46 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:tint="#FFFFFF">
 
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/service"
+            android:icon="@drawable/services_24"
+            android:title="Services" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/feedback_24"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/user_circle_24"
+            android:title="Profile" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/power_24"
+            android:title="Log Out" />
+        <item
+            android:id="@+id/bureau"
+            android:icon="@drawable/location_on_24"
+            android:title="Location" />
+    </group>
+
+
     <item
-        android:id="@+id/nif"
-        android:title="Nif " />
+        android:id="@+id/terms"
+        android:icon="@drawable/policy_24"
+        android:title="Terms &amp; Condition" />
+
     <item
         android:id="@+id/fulname"
-        android:title="Full Name" />
-    <item
-        android:id="@+id/home"
-        android:title="Home" />
-    <item
-        android:id="@+id/service"
-        android:title="Services" />
-    <item
-        android:id="@+id/feedback"
-        android:title="Feedback" />
-    <item
-        android:id="@+id/profile"
-        android:title="Profile" />
-    <item
-        android:id="@+id/logout"
-        android:title="Log Out" />
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Share" />
+
     <item
         android:id="@+id/exit"
         android:title="Exit" />
-    <item
-        android:id="@+id/bureau"
-        android:title="Bureau Pi Prew" />
 </menu>
