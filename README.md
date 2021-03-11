@@ -101,3 +101,5 @@ GIF created with:
 The learning platform is:
 * [CodePath.org](contact@codepath.org)
 
+[OAVCT]
+Copyright (C) [2021] [Franceau VAL, Yves Ronaldo CAZEAU, Luckson SURPRICE]
