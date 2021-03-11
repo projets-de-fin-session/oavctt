@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drwer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Home"
+    tools:openDrawer="start">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/boll"
         android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
         tools:ignore="MissingConstraints" />
 
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_back_24" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_baseline_back_24" />-->
 
     <Button
         android:id="@+id/buttonadtowatchlist"
@@ -39,6 +47,14 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:id="@+id/navigation_view"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start"
+        android:layout_height="687dp"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

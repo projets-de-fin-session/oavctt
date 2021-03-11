@@ -2,4 +2,6 @@
     <string name="app_name">oavct</string>
     <string name="see_localisatio">See localisatio</string>
     <string name="localisation">Localisation</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

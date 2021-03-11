@@ -18,7 +18,7 @@ public class Services extends AppCompatActivity {
         setContentView(R.layout.activity_services);
 
 
-        int images[] = {R.drawable.vc, R.drawable.vct, R.drawable.images, R.drawable.oavct_tabarre_2};
+        int images[] = {R.drawable.vc, R.drawable.vct, R.drawable.image, R.drawable.oavct_tabarre_2};
         flipper = (ViewFlipper) findViewById(R.id.viewFliper);
         image = (ImageView) findViewById(R.id.back);
 
