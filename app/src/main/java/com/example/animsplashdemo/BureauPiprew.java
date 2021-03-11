@@ -66,49 +66,49 @@ public class BureauPiprew extends AppCompatActivity implements TvShowListener{
 
         TvShow b = new TvShow();
         b.imanges = R.drawable.splash;
-        b.name = "The 100";
+        b.name = "Jacmel";
         b.rating = 4.5f;
-        b.createdBy = "Luckson";
+        b.createdBy = "41, rue Normande , Jacmel";
         b.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti ";
         tvShows.add(b);
 
         TvShow c = new TvShow();
         c.imanges = R.drawable.splash;
-        c.name = "The 100";
+        c.name = "Centre";
         c.rating = 4.5f;
-        c.createdBy = "Luckson";
+        c.createdBy = "Complexe administratif de Hinche, rue des Lattes , Hinche";
         c.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti ";
         tvShows.add(c);
 
         TvShow m = new TvShow();
         m.imanges = R.drawable.jacmel;
-        m.name = "The 100";
+        m.name = "Artibonite";
         m.rating = 4.5f;
-        m.createdBy = "Luckson";
+        m.createdBy = "Saint-Marc, Haiti";
         m.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti ";
         tvShows.add(m);
 
         TvShow é = new TvShow();
         é.imanges = R.drawable.loc;
-        é.name = "The 100";
+        é.name = "Nord-est";
         é.rating = 4.5f;
-        é.createdBy = "Luckson";
+        é.createdBy = "212, rue du Quai prolongée , Fort Liberté (Nord-Est)";
         é.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti ";
         tvShows.add(é);
 
         TvShow k = new TvShow();
         k.imanges = R.drawable.oavct_tabarre_2;
-        k.name = "The 100";
+        k.name = "Sud";
         k.rating = 4.5f;
-        k.createdBy = "Luckson";
+        k.createdBy = "7, Rue Du Quai, Complexe Administrati";
         k.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti ";
         tvShows.add(k);
 
         TvShow r = new TvShow();
         r.imanges = R.drawable.miragouanne;
-       r.name = "The 100";
+       r.name = "Nord-ouest";
        r.rating = 4.5f;
-       r.createdBy = "Luckson";
+       r.createdBy = "150 Bis, Rue Capois-la-Mort";
        r.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti ";
         tvShows.add(r);
 
