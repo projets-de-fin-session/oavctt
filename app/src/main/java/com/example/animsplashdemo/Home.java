@@ -51,7 +51,13 @@ public class Home extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.fulname:
-                        Toast.makeText(Home.this,"name",Toast.LENGTH_LONG).show();
+                        Intent myintent = new Intent(Intent.ACTION_SENDTO);
+                        myintent.setType("text/plain");
+                        String shareBody = "your body here";
+                        String shareSub = "your sub here";
+                        myintent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
+                        myintent.putExtra(Intent.EXTRA_TEXT,shareBody);
+                        startActivity(Intent.createChooser(myintent,"Share using"));
                         break;
 
                     case R.id.home:
