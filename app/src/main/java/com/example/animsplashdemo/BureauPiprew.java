@@ -34,9 +34,7 @@ public class BureauPiprew extends AppCompatActivity implements TvShowListener{
         the100.name = "Ouanaminthe";
         the100.rating = 5f;
         the100.createdBy = "Rue St-Pierre prolongée, bureau de l'ancienne Douane";
-        the100.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti, +50937438097\n" +
-                "+50937205586\n" +
-                "+50948904037 ";
+        the100.story = "Office Assurance Véhicules Contre-Tiers (OAVCT) - Haiti";
         tvShows.add(the100);
 
         TvShow lostInspaces = new TvShow();
