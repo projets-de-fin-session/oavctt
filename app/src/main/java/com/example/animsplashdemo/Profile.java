@@ -21,13 +21,13 @@ public class Profile extends AppCompatActivity {
 
         image = (ImageView) findViewById(R.id.back);
 
-        image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-                Intent intent = new Intent(Profile.this, Home.class);
-                startActivity(intent);
-            }
-        });
+        //image.setOnClickListener(new View.OnClickListener() {
+           // @Override
+           // public void onClick(View v) {
+               // onBackPressed();
+               // Intent intent = new Intent(Profile.this, Home.class);
+               // startActivity(intent);
+          //  }
+       // });
     }
 }
