@@ -64,14 +64,14 @@ public class SignUp extends AppCompatActivity {
         });
 
 
-        image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-                Intent intent = new Intent(SignUp.this, Login.class);
-                startActivity(intent);
-            }
-        });
+//        image.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onBackPressed();
+//                Intent intent = new Intent(SignUp.this, Login.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
         signUpBouton.setOnClickListener(new View.OnClickListener() {
