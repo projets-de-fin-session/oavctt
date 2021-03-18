@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 public class Services extends AppCompatActivity {
     private ViewFlipper flipper;
-    private ImageView image;
+    private ImageView bac;
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,19 +22,29 @@ public class Services extends AppCompatActivity {
 
         int images[] = {R.drawable.vc, R.drawable.vct, R.drawable.image, R.drawable.oavct_tabarre_2};
         flipper = (ViewFlipper) findViewById(R.id.viewFliper);
-        image = (ImageView) findViewById(R.id.back);
+        btn = findViewById(R.id.bouton1);
+        bac = (ImageView) findViewById(R.id.backs);
 
         for (int image: images){
             flipers(image);
         }
 
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vhome = new Intent(Services.this, VehiculeInsurance.class);
+                startActivity(vhome);
+                finish();
+            }
+        });
 
-        image.setOnClickListener(new View.OnClickListener() {
+        bac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
-                Intent intent = new Intent(Services.this, Home.class);
-                startActivity(intent);
+                Intent vhome = new Intent(Services.this, Home.class);
+                startActivity(vhome);
+                finish();
             }
         });
     }
@@ -43,7 +55,6 @@ public class Services extends AppCompatActivity {
         flipper.addView(imageView);
         flipper.setFlipInterval(4000);
         flipper.setAutoStart(true);
-
         flipper.setInAnimation(this, android.R.anim.slide_in_left);
         flipper.setOutAnimation(this, android.R.anim.slide_out_right);
     }

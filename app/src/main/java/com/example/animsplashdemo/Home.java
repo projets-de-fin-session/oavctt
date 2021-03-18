@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
@@ -51,13 +52,11 @@ public class Home extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.fulname:
-                        Intent myintent = new Intent(Intent.ACTION_SENDTO);
-                        myintent.setType("text/plain");
-                        String shareBody = "your body here";
-                        String shareSub = "your sub here";
-                        myintent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
-                        myintent.putExtra(Intent.EXTRA_TEXT,shareBody);
-                        startActivity(Intent.createChooser(myintent,"Share using"));
+                        Intent sendIntent = new Intent();
+                        sendIntent.setAction(Intent.ACTION_SEND);
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+                        sendIntent.setType("text/plain");
+                        startActivity(sendIntent);
                         break;
 
                     case R.id.home:
@@ -82,6 +81,13 @@ public class Home extends AppCompatActivity {
                         Intent intend = new Intent(Home.this, Profile.class);
                         startActivity(intend);
                         finish();
+                        break;
+
+                    case R.id.terms:
+                        String url = "https://flashhaiti.com/business/detail/OAVCT---Office-Assurance-Vehicules-Contre-Tiers";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
                         break;
 
                     case R.id.bureau:

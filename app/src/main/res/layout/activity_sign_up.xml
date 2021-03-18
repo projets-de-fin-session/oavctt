@@ -286,7 +286,7 @@
                         android:inputType="textPassword"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
