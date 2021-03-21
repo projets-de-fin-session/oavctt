@@ -1,7 +1,8 @@
+
+    
 package com.example.animsplashdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,6 +37,13 @@ public class VehiculeInsurance extends AppCompatActivity implements View.OnClick
     private EditText editText1, editText2, editText3, editText4, editText5, editText6, editText7, editText8, editText9, editText10, editText11, editText12;
 
     private Button generate_pdf;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
+
+public class Services extends AppCompatActivity {
+    private ViewFlipper flipper;
+    private ImageView bac;
+    private Button btn;
 
     private ImageView bak;
 
@@ -96,7 +104,17 @@ public class VehiculeInsurance extends AppCompatActivity implements View.OnClick
                                 editText11.getText().toString(),editText12.getText().toString());
                 }
                 break;
+=======
+        setContentView(R.layout.activity_services);
 
+
+        int images[] = {R.drawable.vc, R.drawable.vct, R.drawable.image, R.drawable.oavct_tabarre_2};
+        flipper = (ViewFlipper) findViewById(R.id.viewFliper);
+        btn = findViewById(R.id.bouton1);
+        bac = (ImageView) findViewById(R.id.backs);
+
+        for (int image: images){
+            flipers(image);
         }
 
     }
@@ -107,12 +125,24 @@ public class VehiculeInsurance extends AppCompatActivity implements View.OnClick
             File file = new File(pah);
             if (!file.exists()) {
                 file.mkdirs();
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vhome = new Intent(Services.this, VehiculeInsurance.class);
+                startActivity(vhome);
+                finish();
+            }
+        });
+
+        bac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+                Intent vhome = new Intent(Services.this, Home.class);
+                startActivity(vhome);
+                finish();
             }
 
-            File filepdf = new File(file.getAbsolutePath() + "MYPDF_" + getCurrentTime() + " " + getToDaysDate() + " " + ".pdf");
-            if (!filepdf.exists()){
-                filepdf.createNewFile();
-            }
 
             Document documented = new Document();
             PdfWriter.getInstance(documented, new FileOutputStream(filepdf.getAbsoluteFile()));
@@ -191,14 +221,17 @@ public class VehiculeInsurance extends AppCompatActivity implements View.OnClick
         } catch (DocumentException e) {
             e.printStackTrace();
         }
-
+        });
     }
 
-        private String getCurrentTime() {
-            return new SimpleDateFormat("hh:mm a", Locale.getDefault()).format(new Date());
-        }
-
-        private String getToDaysDate() {
-            return new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).format(new Date());
-        }
+    public void flipers(int images){
+        ImageView imageView = new ImageView(this);
+        imageView.setBackgroundResource(images);
+        flipper.addView(imageView);
+        flipper.setFlipInterval(4000);
+        flipper.setAutoStart(true);
+        flipper.setInAnimation(this, android.R.anim.slide_in_left);
+        flipper.setOutAnimation(this, android.R.anim.slide_out_right);
     }
+}
+
