@@ -13,6 +13,7 @@ public class Services extends AppCompatActivity {
     private ViewFlipper flipper;
     private ImageView bac;
     private Button btn;
+    private Button btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class Services extends AppCompatActivity {
         int images[] = {R.drawable.vc, R.drawable.vct, R.drawable.image, R.drawable.oavct_tabarre_2};
         flipper = (ViewFlipper) findViewById(R.id.viewFliper);
         btn = findViewById(R.id.bouton1);
+        btn2 = findViewById(R.id.bouton2);
         bac = (ImageView) findViewById(R.id.backs);
 
         for (int image: images){
@@ -33,6 +35,15 @@ public class Services extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent vhome = new Intent(Services.this, VehiculeInsurance.class);
+                startActivity(vhome);
+                finish();
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vhome = new Intent(Services.this, ExpertiseRequest.class);
                 startActivity(vhome);
                 finish();
             }

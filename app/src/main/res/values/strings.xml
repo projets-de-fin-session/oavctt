@@ -4,4 +4,6 @@
     <string name="localisation">Localisation</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="pi_prew_pou_yon_pi_bon_service">Pi prew pou yon pi bon service</string>
+    <string name="todo">TODO</string>
 </resources>
