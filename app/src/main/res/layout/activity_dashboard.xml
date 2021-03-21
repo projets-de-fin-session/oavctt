@@ -237,22 +237,22 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <!--                <TextView-->
-                <!--                    android:layout_width="wrap_content"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:text="Don t have_account?"-->
-                <!--                    android:textColor="@color/colorPrimaryDark"-->
-                <!--                    android:textSize="17sp"/>-->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Don t have_account?"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="17sp"/>
 
-                <!--                <TextView-->
-                <!--                    android:id="@+id/creer_un_compte"-->
-                <!--                    android:layout_width="wrap_content"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginStart="4dp"-->
-                <!--                    android:text="SignUp"-->
-                <!--                    android:textColor="@color/rouge"-->
-                <!--                    android:textSize="17dp"-->
-                <!--                    android:textStyle="bold"/>-->
+                                <TextView
+                                    android:id="@+id/Id_SignUp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="SignUp"
+                                    android:textColor="@color/rouge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold"/>
 
 
             </LinearLayout>
