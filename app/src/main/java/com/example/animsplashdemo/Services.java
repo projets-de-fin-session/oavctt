@@ -1,13 +1,13 @@
 package com.example.animsplashdemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Services extends AppCompatActivity {
     private ViewFlipper flipper;
@@ -63,7 +63,7 @@ public class Services extends AppCompatActivity {
         });
 
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
