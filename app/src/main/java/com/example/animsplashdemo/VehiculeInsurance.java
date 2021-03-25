@@ -118,13 +118,13 @@ public class VehiculeInsurance extends AppCompatActivity implements View.OnClick
             documented.open();
 
             Paragraph titleParagraph = new Paragraph();
-            titleParagraph.add(title);
+            titleParagraph.add("OAVCT");
             titleParagraph.setSpacingAfter(10.0f);
             titleParagraph.setAlignment(Element.ALIGN_CENTER);
             documented.add(titleParagraph);
 
             Paragraph titleParagraph1 = new Paragraph();
-            titleParagraph.add(title1);
+            titleParagraph.add("Office Assurance Véhicules Contre Tiers (OAVCT)");
             titleParagraph.setSpacingAfter(10.0f);
             titleParagraph.setAlignment(Element.ALIGN_CENTER);
             documented.add(titleParagraph1);
