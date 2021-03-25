@@ -29,27 +29,27 @@ Aside  from  the  default  basic  architecture  of  Android  studio,  we  have  
 
 ## User Stories
 These are people who will use the front end to perform the following services:
-* [] User can **Download App on Play Store**
-* [] User can **Sing up as**
+* [x] User can **Download App on Play Store**
+* [x] User can **Sing up as**
      * Physical person
      * Concessionaire
      * Enterprise	
-* [] User can have information about of OAVCT
+* [x] User can have information about of OAVCT
 * [] User can See information and updates
-* [] User can Create an account
-* [] User can Connect using his credentials, **Login or Log out** 
+* [x] User can Create an account
+* [x] User can Connect using his credentials, **Login or Log out** 
 ```
 After logging in, the customer can access the following services:
 ```
-* [] User can see all services
-* [] Launch an expertise reques
+* [x] User can see all services
+* [x] Launch an expertise reques
 * [] User can  post feed-back
-* [] User can renew their auto insurance online
-* [] User can launch an expertise request for a new insurance issue or a transfer and schedule an appointment for the assessment
-* [] User can initiate changes in vehicle use.
+* [x] User can renew their auto insurance online
+* [x] User can launch an expertise request for a new insurance issue or a transfer and schedule an appointment for the assessment
+* [x] User can initiate changes in vehicle use.
 
-* [] Request for vehicle blocking
-* [] Initiate changes of vehicle users
+* [x] Request for vehicle blocking
+* [x] Initiate changes of vehicle users
 * [] User can pay online via credit cart
 * [] user can verify history command
 
